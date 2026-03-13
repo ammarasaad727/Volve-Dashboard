@@ -10,6 +10,21 @@ st.sidebar.info("""
 تم تطويره بواسطة المهندس عمار أسعد لتمكين المهندسين 
 من مراقبة أداء الآبار لحظياً.
 """)
+# إضافة معلومات التواصل في القائمة الجانبية
+st.sidebar.markdown("---") # خط فاصل
+st.sidebar.title("📩 تواصل معي")
+
+# رابط لينكد إن
+linkedin_url = "https://www.linkedin.com/in/ammar-asaad/" # تأكد من وضع رابط حسابك الصحيح هنا
+st.sidebar.markdown(f'[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)]({linkedin_url})')
+
+# البريد الإلكتروني
+email = "ammarasaad727@gmail.com" # ضع إيميلك هنا
+st.sidebar.write(f"📧: {email}")
+
+st.sidebar.markdown("---")
+st.sidebar.info("تم تطوير هذا التطبيق بواسطة المهندس عمار أسعد")
+
 
 #st.dataframe(df)
 
