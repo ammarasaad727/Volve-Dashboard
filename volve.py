@@ -3,6 +3,33 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+# --- إعدادات الصفحة (يفضل وضعها أولاً) ---
+st.set_page_config(page_title="Volve Field Analytics", page_icon="🛢️", layout="wide")
+
+
+# ==========================================
+# --- قسم الشعارات والصور الشخصية (sidebar) ---
+# ==========================================
+
+# 1. لوغو منصة PetroScience في الأعلى
+# ملاحظة: استبدل 'url_to_petroscience_logo.png' برابط مباشر للصورة (PNG or JPG)
+petroscience_logo_url = "https://media.licdn.com/dms/image/v2/D5603AQGFR4yZ0Xbu8g/profile-displayphoto-crop_800_800/B56Zxrp.xPKgAI-/0/1771332696686?e=1775088000&v=beta&t=d08ng5-dwtD7Q6PF_QoYD8l5u9aDtzW0qTdUojcj7_E" # <--- ضع الرابط هنا
+st.sidebar.image(petroscience_logo_url, use_container_width=True)
+
+st.sidebar.markdown("---") # خط فاصل
+
+# 2. صورتك الشخصية والاسم
+# ملاحظة: استبدل 'url_to_your_photo.jpg' برابط مباشر لصورتك
+my_photo_url = "https://media.licdn.com/dms/image/v2/D4D03AQH_gUWhtKDArA/profile-displayphoto-crop_800_800/B4DZxtywF.HwAI-/0/1771368594658?e=1775088000&v=beta&t=t9DpZwE5y5X6nx_u2Atyrb1h9DSUaftqn6AtSMEmT7s" # <--- ضع الرابط هنا
+col1, col2 = st.sidebar.columns([1, 3]) # تقسيم السطر لصورة صغيرة واسم
+with col1:
+    st.image(my_photo_url, width=60) # عرض الصورة بعرض 60 بكسل
+with col2:
+    st.write("### المهندس عمار أسعد")
+    st.write("مطور التطبيق")
+
+st.sidebar.markdown("---") # 
+
 st.header("Ammar Asaad")
 st.caption("مرحبا")
 st.sidebar.info("""
