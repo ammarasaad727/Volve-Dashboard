@@ -31,7 +31,7 @@ with col2:
 st.sidebar.markdown("---") # 
 
 st.header("Ammar Asaad")
-st.caption("مرحبا")
+st.caption("📊 التحليل الذكي لأداء آبار حقل Volve")
 st.sidebar.info("""
 هذا التطبيق يحلل بيانات حقل Volve (بحر الشمال). 
 تم تطويره بواسطة المهندس عمار أسعد لتمكين المهندسين 
